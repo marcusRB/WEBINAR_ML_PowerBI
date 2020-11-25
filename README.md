@@ -36,3 +36,5 @@ Apasionado de Finanza, Marketing e IT, es consultor y especialista en Digital Da
 Special Thanks to Pycaret and your authors
 - [Build your own AutoML in Power BI using PyCaret 2.0](https://github.com/pycaret/pycaret-powerbi-automl)
 - autoML with Microsoft Azure ML
+- https://demos.datasciencedojo.com/demo/titanic/
+- databricks on Azure ML

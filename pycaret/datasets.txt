@@ -1,0 +1,33 @@
+# pycaret
+
+dataset:
+- https://raw.githubusercontent.com/pycaret/pycaret/master/datasets/insurance.csv
+
+
+## SCRIPT Python PowerQuery
+
+# 'dataset' holds the input data for this script
+
+# import regression module
+from pycaret.regression import *
+
+# init setup
+reg1 = setup(data=dataset, target = 'charges', silent = True, html = False)
+
+# compare models
+best_model = compare_models()
+
+# finalize best model
+best = finalize_model(best_model)
+
+# save best model
+save_model(best, 'C:/Users/mrusso/jupyter-notebook/WEBINAR_ML_PowerBI/pycaret')
+
+# return the performance metrics df
+dataset = pull()
+
+
+# Machine Learning Power BI
+
+dataset:
+- https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv
